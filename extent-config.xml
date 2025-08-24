@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- General Settings -->
+        <encoding>utf-8</encoding>
+        <protocol>https</protocol>
+        <timelineEnabled>true</timelineEnabled>
+
+        <!-- Report Look & Feel -->
+        <theme>standard</theme>
+        <documentTitle>BasicSeleniumFramework Report</documentTitle>
+        <reportName>Test Execution Report</reportName>
+
+        <!-- Chart Settings -->
+        <chartVisibilityOnOpen>true</chartVisibilityOnOpen>
+        <testViewChartLocation>top</testViewChartLocation>
+
+        <!-- Time Format -->
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+    </configuration>
+</extentreports>

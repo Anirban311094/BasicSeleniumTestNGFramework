@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UI Suite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="com.example.framework.listeners.ExtentTestNGListener"/>
+    </listeners>
+
+
+    <test name="US-2001TC-001_SuccessfulRegistration" thread-count="1" enabled="false">
+        <classes>
+            <class name="com.example.framework.tests.LoginAndRegistrationAETest">
+                <parameter name="name" value="Testfirst Testlast"></parameter>
+                <parameter name="email" value="testin_qa3@testng.com"></parameter>
+                <parameter name="gender" value="M"></parameter>
+                <parameter name="password" value="Test@1234"></parameter>
+                <parameter name="dob_SplittedByDash" value="6-June-2000"></parameter>
+                <parameter name="newsletterSignUpYN" value="Y"></parameter>
+                <parameter name="rcvSpclOffrYN" value="Y"></parameter>
+                <parameter name="first_name" value="Testfirstname"></parameter>
+                <parameter name="last_name" value="Testlastname"></parameter>
+                <parameter name="company" value="Test Company Pvt Ltd"></parameter>
+                <parameter name="address1" value="1, Test Address"></parameter>
+                <parameter name="address2" value="2, Test Address"></parameter>
+                <parameter name="country" value="India"></parameter>
+                <parameter name="state" value="West Bengal"></parameter>
+                <parameter name="city" value="Kolkata"></parameter>
+                <parameter name="zipCode" value="700056"></parameter>
+                <parameter name="mobileNo" value="9999990000"></parameter>
+                    <methods>
+                        <include name="testValidRegistration"/>
+                    </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="US-2001TC-002_verifyRequiredField_Password" thread-count="1" enabled="false">
+        <classes>
+            <class name="com.example.framework.tests.LoginAndRegistrationAETest">
+                <parameter name="name" value="Testfirst Testlast"></parameter>
+                <parameter name="email" value="testin_qa4@testng.com"></parameter>
+                <methods>
+                    <include name="verify_RequiredField_Password"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="US-2001TC-003_verifyErrorMsg_AccountAlreadyExists" thread-count="1">
+        <classes>
+            <class name="com.example.framework.tests.LoginAndRegistrationAETest">
+                <parameter name="name" value="Testfirst Testlast"></parameter>
+                <parameter name="email" value="testin_qa2@testng.com"></parameter>
+                <methods>
+                    <include name="errorMsg_AccountAlreadyExists"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
