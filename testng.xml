@@ -6,11 +6,11 @@
     </listeners>
 
 
-    <test name="US-2001TC-001_SuccessfulRegistration" thread-count="1" enabled="false">
+    <test name="US-2001TC-001_SuccessfulRegistration" thread-count="1" >
         <classes>
             <class name="com.example.framework.tests.LoginAndRegistrationAETest">
                 <parameter name="name" value="Testfirst Testlast"></parameter>
-                <parameter name="email" value="testin_qa3@testng.com"></parameter>
+                <parameter name="email" value="testin_qa6@testng.com"></parameter>
                 <parameter name="gender" value="M"></parameter>
                 <parameter name="password" value="Test@1234"></parameter>
                 <parameter name="dob_SplittedByDash" value="6-June-2000"></parameter>
@@ -33,11 +33,11 @@
         </classes>
     </test>
 
-    <test name="US-2001TC-002_verifyRequiredField_Password" thread-count="1" enabled="false">
+    <test name="US-2001TC-002_verifyRequiredField_Password" thread-count="1" >
         <classes>
             <class name="com.example.framework.tests.LoginAndRegistrationAETest">
                 <parameter name="name" value="Testfirst Testlast"></parameter>
-                <parameter name="email" value="testin_qa4@testng.com"></parameter>
+                <parameter name="email" value="testin_qa7@testng.com"></parameter>
                 <methods>
                     <include name="verify_RequiredField_Password"/>
                 </methods>
