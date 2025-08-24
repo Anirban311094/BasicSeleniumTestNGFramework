@@ -22,6 +22,8 @@ public class LoginAndRegistrationAETest extends BaseTest {
     public void testValidRegistration(String name, String email, String gender, String password, String dob_SplittedByDash, String newsletterSignUpYN,
                                       String rcvSpclOffrYN, String first_name, String last_name, String company, String address1, String address2,
                                       String country, String state, String city, String zipCode, String mobileNo) throws Exception{
+        email = email.split("@")[0] +System.currentTimeMillis()+"@"+email.split("@")[1];
+        System.out.println("Email testValidRegistration: "+email);
         var loginAndRegistrationAEPage = new LoginAndRegistrationAEPage(DriverFactory.getDriver());
         loginAndRegistrationAEPage.enterSignUpOrLogInPage();
         Assert.assertEquals(loginAndRegistrationAEPage.isSignUpDisplayed(), true);
@@ -41,6 +43,8 @@ public class LoginAndRegistrationAETest extends BaseTest {
     @Test(description = "Validate Password field is Required")
     @Parameters({"name", "email"})
     public void verify_RequiredField_Password(String name, String email) throws Exception{
+        email = email.split("@")[0] +System.currentTimeMillis()+"@"+email.split("@")[1];
+        System.out.println("Email verify_RequiredField_Password: "+email);
         var loginAndRegistrationAEPage = new LoginAndRegistrationAEPage(DriverFactory.getDriver());
         loginAndRegistrationAEPage.enterSignUpOrLogInPage();
         loginAndRegistrationAEPage.fillup_RegistrationNameAndEmail(name, email);
