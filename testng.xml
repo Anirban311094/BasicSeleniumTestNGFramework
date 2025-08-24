@@ -10,7 +10,7 @@
         <classes>
             <class name="com.example.framework.tests.LoginAndRegistrationAETest">
                 <parameter name="name" value="Testfirst Testlast"></parameter>
-                <parameter name="email" value="testin_qa8@testng.com"></parameter>
+                <parameter name="email" value="testin_qa10@testng.com"></parameter>
                 <parameter name="gender" value="M"></parameter>
                 <parameter name="password" value="Test@1234"></parameter>
                 <parameter name="dob_SplittedByDash" value="6-June-2000"></parameter>
@@ -37,7 +37,7 @@
         <classes>
             <class name="com.example.framework.tests.LoginAndRegistrationAETest">
                 <parameter name="name" value="Testfirst Testlast"></parameter>
-                <parameter name="email" value="testin_qa9@testng.com"></parameter>
+                <parameter name="email" value="testin_qa11@testng.com"></parameter>
                 <methods>
                     <include name="verify_RequiredField_Password"/>
                 </methods>
